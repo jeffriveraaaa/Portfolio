@@ -1,0 +1,91 @@
+.ml15 {
+  font-weight: 800;
+  font-size:5vw;
+  letter-spacing: 5px;
+  color: #EE5007;
+  text-transform: uppercase;
+}
+
+#ml15_gfx{
+  color: #F5F5F5;
+}
+
+#ml15_mock-ups{
+  color: #F7F5F2;
+}
+
+#ml12_mock-ups{
+  color: #F7F5F2;
+}
+
+.ml12 {
+  font-weight: 200;
+  font-size:2vw;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+li a.active{
+ color: white;
+ opacity: 1;
+}
+
+div.gallery img {
+  width: 60%;
+  height: auto;
+}
+
+header h1 {
+  background-image: linear-gradient(to left, #EE5007, #F1A661);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#GFX_h1{
+  font-size: 45px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #7743DB, #D96098);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#Web-Designs-h1{
+  font-size: 35px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#Linked-h1{
+  background-image: linear-gradient(to left, #7743DB, #EC255A);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+div.spacer70{
+  height: 70px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  
+  div.gallery img {
+  width: 100%;
+  height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}

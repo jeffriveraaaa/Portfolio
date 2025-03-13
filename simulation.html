@@ -1,0 +1,130 @@
+<html>
+<title>PH Driving Simulator</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAABqamqTk5PCwsI/Pz+Xl5fv7++goKB3d3fV1dVwcHDm5ub19fWtra3FxcW0tLTc3NxiYmJSUlLy8vL5+flKSkooKCiDg4PLy8vq6uqkpKSampoaGhpdXV2ysrJ7e3uKiooNDQ0sLCwxMTEhISE4ODhLS0tDQ0MTExPIn46ZAAAHZ0lEQVR4nO2d63qqOhCGQalaRMUiVqRV0WVr7/8Gt8jkJIcASQD3M+8v20oyHySTySShloUgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIL0w8JzHX+Z4juut+jbHL2s/SS42iLXIPHXfRumBS8+2OV8xF7fBqrhfX1WyMu4zPZ9m9kaJ5DKywicvk1tw2ZSU17G7NVcz2JXJuW77A9J2LfRTcg9v3+jmeOy/nYfOGajf7nn2KPFzfDPouW71abwe5vV05P+fo3+uN/yRn+Oqwe9dSIMlMG0IysVWPIGv7s1rnDn/CW+cQsV4Yf3SV3/uBhzV82N2qfK+o9ZOm5yYZhwDXvAYY7PPYli51LOdMQujoxYpwE2Rlzq9L9nXOZzltpt0wJz/YlyCV9aLdME84htHmBGpHyTDEIF3lQizOnPYCWe6BCoWBB1OBMtdmmDDmjqHYiOG4NyN75Oq2YDHDTWxCY9IRcN/AYz+Q91tysysF40lacMSVbo8w1kYFR1W5qIDZjzAWWuNJbZmj0Y86a11AuUOoTUxg1saRpqV+NBqSOtpbaCOD7drt03VG5jFmDITnvJENx8ay+4IYkxO8gYpO6hHRrsKmCiLfnyaqX8OHeBGsqxDwYEWtabDtMcK5eXbYOZ8Gotr1jOj6WjlJMRgWzcV8KqWt2ri96hkOHJq5Zy0FHKyZBAS8ft9+5R13jUkvmZFmIIN6vgPG9r4lhtlQAi0kCTnCLAD/Y1UUyy6k0uGEFM2FdaChqpySogKDybrKMc6CT6I1IeGDDap2BVmHRROYRc/aQWt+YbqWVtskp+zdZSQla3OEVdn+bPjmc1n5NcxGyUgFcMx6OExQneaUSSWMfRSVw0fuviPhYD3VDIrz3a1En42sPhZmuJj0nMw/7wsSODSHTZmPPodqvc9Xr7QjQZ12ECPkC44+ec75mwoCDLWD2mIV+Pjzf4zicddLKVGWGyucoK+KhpVY1pXNNol792Cr9jy78kD5ea/84ugGWcbAkgZD9AupsPRDYN7fmQCTw2LPDGX0wU2jH8gk5iixVmDQDGvEmxQut5U6MMWd59JC9CQBgNqUKohs2uSxR+11BYd3McQbbTIWlYnrCPiSl8SHLFHwsU2ie5wqYWySK8qbwIAafs4kiYopcpTP8gURjbzZDOJtZbeSEcgisVbo+QACpVaC9kCpslkrb69h2DExHmhuUNoFxhIFPoshK6ZUYeAUcbhXe/W60QGnv3K8Kwri2snLRSaLvVCj1yI7omKVeYXJj5sVzh57lSIQz53e+wqVAYL6j1zlSu0K5+hiH7c7dAKxUSiSBnRhN4PvlUqPAqhBeDe4ZxgTFUITjApVWp0BbS0WUKodDuPQ3kiIpGizTOWQfft3QWVK1wVUMh+NJjV8IoMBAL8zZOIaFaId8hexsPneJs7BwCYmG22lyhxQ4nSGKaoMQOZeWJXY0wTLVQyKLztnFpo73IeaSrGkIk30KhlcgU0i+UoZYQX8mKF1L6bRRaZAm69fxQbc+N9BlelRWSKjiFwlMpPUZEUFwYKoo+BPj7DbEM3zf37D5nW7k+09+e2Efa0dL7AkNQmC+gHOWtWHHwVsgNloUEX3bIiYZGmNqcOZWHY8g+kkAsm5GmDy5rBEIyCVzpv1uxGYHBSABal+BqwtuzZmua5gqzUTN9WJBATj/Ohauy3pT2+60Q6+60NMV2ZFU/7ZBcR7mdaC7NYS4iaugm4m3mroqeJumQalO2tg2QWTW7egndUJoFNQK4BbMhcZx3Xt0BHdHsstCtx25Iu4jJZgp38Sr/phFg1UUxMKwE5tkdT/A9FyBrHAbrghqOpMouWqvHpZkAc8c+89sTL+Y1/uUqtX+MVZa/m+Z31Eb5Os3tVC6c2ZjeFl2o0NRDLHyphmmFYVGlhnrisrAuI1XxuN1VW1hTB3uHwpXDAfWa2BhFjgb5XHU9nKEhJyv1vy6INJaT9pKbQbZK6I+rSPai99e6zAzdapI+GcALT8hmf73+lPhRc9FEfeiGBJ3xlJFCW0NOOZ/19Ri6mDyQNw+QnK6+E4ik5ZvcQt4EmtLcaiqQHu4fwvnKBzRC1nTPO4xf6kKP0N/k362BEe+sCG1XFx0vesrylAN7bQTblqohftuk8YzZMwAtYItgOhKoq+UA34vJJA7g/LUZ2EGzc7t5+N4fkPMs5J1KtOfN45vwNKAhvowZk9h4ThC/Rgvnk2PnJsOZT9eyjdmmiT1/cPovrhd1hUturd6wgRpIbJ653OesT/wFJhdBdOGK59//xlUO0k3EnOjQuyGQ28V0mLl537pwc2+JPr/G+0vvbN6fNdr29Xc3W/qryI0i5/i1OxQsSbxCC6V4Tc/e3APtwUwGa7IvfVdyITXd7rAIY/nryjN+BzUTbIQ7lp88e4sH81q2dnhx1YnGkW/qnRrd4i53v89bDK9B4rz4w3tm47nO8f/6/y0QBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEFeiP8A5LlRy0IxWEwAAAAASUVORK5CYII=">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="sub-css.css">
+<link rel="stylesheet" href="sub-sites.css">
+</head>
+<body>
+<!-- Background & animion & navbar & title -->
+  <div class="container-fluid">
+<!-- Background animtion-->
+    <div class="background2">
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+						<nav id="main-nav2">
+							<div class="container" id="navbar">
+							<ul>
+								<li class="home active"><a href="index.html" class="previous round">&laquo; Return</a></li>
+
+							</ul>
+							</div>
+						</nav>				
+	   <div class="main">
+		<div class="polaroid" id="home">
+		<div class="container">
+				<section class="blanksection" id="home"></section>	
+					<h1 class="ml15">
+						<span class="word">PH Driving</span>
+						<span class="word">Simulator</span>
+					</h1>
+					<h1 class="ml12">Learn road basic traffic rules thru mobile game!</h1>					
+			</div>
+		</div>
+		</div>
+       <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+</div>
+
+<section id="about">
+  <div class="container reveal">	
+    <header>
+        <h1>PH Driving Simulator</h1>
+		<h6>Rudolph Agpoon | Richmond Ramil | Nomer Fabrolina | Jefferson Rivera</h6>
+    </header>
+    <div class="text-container">
+      <div class="text-box">
+        <p>
+<p class="p1">
+PH Driving Simulator was created to provide a reviewer for people who are interested in learning basic traffic rules that they can apply when they are driving outside, especially when in highways.
+This game was built using <a id="abtmlnks" href="https://unity.com/" target="_blank">Unity Game Engine</a>. <br><br>This game was our capstone project when we are in college. I was assigned here to be a part of 
+world map designer, where I created the game map where the user will play the simulation. As a part of map creator/designer, I researched about traffic rules signs and what's their purpose, so that I know where
+to place them in the map, also studied the sequences, timing, and logics, so that I can implement them right.
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section2">
+  <div class="container reveal">
+    <header>
+        <h1>Making the game map</h1>
+    </header>
+	<div class="spacer"></div>
+		<div class="text-container">
+			<div class="text-box">
+				<div class="flex-container">
+							<div class="flex-child">
+								  <div class="gallery">
+								  <img src="game3.png" >
+								  </div>
+							</div>
+							<div class="flex-child2">  
+								<p class="p1"> Researching Traffic Signs in Philippines</p>
+							</div>
+				</div>
+				<div class="spacer70"></div>
+				<div class="flex-container">
+							<div class="flex-child">
+								  <div class="gallery">
+								  <img src="game4.png" >
+								  </div>
+							</div>
+							<div class="flex-child2">  
+								<p class="p1"> Researching what traffic signs and rules logics and details</p>
+							</div>
+				</div>
+				<div class="spacer70"></div>
+				<div class="flex-container">
+							<div class="flex-child">
+								  <div class="gallery">
+								  <img src="game1.gif" >
+								  </div>
+							</div>
+							<div class="flex-child2">  
+								<p class="p1"> Designing the map using Unity desktop app</p>
+							</div>
+				</div>
+				<div class="spacer70"></div>
+				<div class="flex-container">
+							<div class="flex-child">
+								  <div class="gallery">
+								  <img src="game2.gif" >
+								  </div>
+							</div>
+							<div class="flex-child2">  
+								<p class="p1"> In Game View</p>
+							</div>
+				</div>
+			</div>
+		</div>
+  </div>	  
+</section>	  
+<footer>
+
+</footer>
+<script src="simulation-js.js"></script>
+</body>
+</html>

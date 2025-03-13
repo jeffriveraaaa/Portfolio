@@ -1,0 +1,72 @@
+.mockup-button {
+  border: none;
+  width: 100px;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button5 {
+  background-color: #7743DB;
+  color: white;
+  border: none;
+  margin: 20px;
+}
+
+.button5:hover {
+  background-color: #b294eb;
+  color: white;
+}
+
+.dropbtn {
+  margin: 4px 2px;
+  width: 100px;
+  background-color: #7743DB;
+  color: white;
+  padding: 13px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.mockups-btn {
+  position: relative;
+  display: inline-block;
+}
+
+.mockups-btn-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.mockups-btn-content a {
+  color: #262626;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.mockups-btn-content a:hover {
+	background-color: #d9d9d9; 
+}
+
+.mockups-btn:hover .mockups-btn-content {
+  display: block;
+}
+
+.mockups-btn:hover .dropbtn {
+  background-color: #b294eb;
+}

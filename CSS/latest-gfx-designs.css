@@ -102,3 +102,10 @@
 .prev:hover, .next:hover {
   color: #f1c40f; /* highlight on hover */
 }
+
+@media screen and (max-width: 800px) {
+  .prev,
+  .next {
+    display: none;
+  }
+}

@@ -104,8 +104,32 @@
 }
 
 @media screen and (max-width: 800px) {
+
   .prev,
   .next {
     display: none;
   }
+
+  #main-nav2 ul {
+    width: 100%;
+    /* make it full width */
+    height: auto !important;
+    /* let it expand to fit items */
+    overflow: visible !important;
+    display: block;
+    /* ensure items stack */
+  }
+
+  #li_gfx {
+    display: list-item;
+    width: 100%;
+    /* optional: make the link span full width */
+  }
+
+  #li_gfx a {
+    display: block;
+    text-align: left;
+    /* or center if you want */
+  }
 }
+

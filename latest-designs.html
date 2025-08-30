@@ -33,11 +33,27 @@
         </div>
     </div>
 
-    <section>
+    <div class="sub-nav">
+        <ul>
+            <li class="sub-link active" data-target="social">Social Media Post</li>
+            <li class="sub-link" data-target="posters">Posters</li>
+            <li class="sub-link" data-target="thumbnails">Thumbnails</li>
+            <li class="sub-link" data-target="emailers">Emailers</li>
+        </ul>
+    </div>
+
+    <!-- Dropdown (mobile only) -->
+    <select class="sub-nav-dropdown">
+        <option value="social">Social Media Post</option>
+        <option value="posters">Posters</option>
+        <option value="thumbnails">Thumbnails</option>
+        <option value="emailers">Emailers</option>
+    </select>
+    </div>
+
+    <section id="social" class="tab-content active">
         <!-- ✅ New Section: Latest Designs -->
         <div class="latest-designs">
-            <h2>Latest Designs</h2>
-
             <!-- ✅ Gallery -->
             <div class="gallery-container">
                 <div class="gallery-item">
@@ -90,6 +106,38 @@
 
         </div>
     </section>
+
+    <section id="posters" class="tab-content">
+        <div class="latest-designs">
+            <div class="gallery-container">
+                <div class="gallery-item"><img src="GFX/Latest Designs/Posters/liceria & co.png" alt="liceria & co"></div>
+                <div class="gallery-item"><img src="GFX/Latest Designs/Posters/apple-products.png" alt="apple products"></div>
+                <div class="gallery-item"><img src="GFX/Latest Designs/Posters/seiko-watch.png" alt="seiko watch"></div>
+                <!-- add more... -->
+            </div>
+        </div>
+    </section>
+
+    <section id="thumbnails" class="tab-content">
+        <div class="latest-designs">
+            <h2>Thumbnails</h2>
+            <div class="gallery-container">
+                <div class="gallery-item"><img src="GFX/Thumbnails/1.png" alt="Thumbnail 1"></div>
+                <!-- add more... -->
+            </div>
+        </div>
+    </section>
+
+    <section id="emailers" class="tab-content">
+        <div class="latest-designs">
+            <h2>Emailers</h2>
+            <div class="gallery-container">
+                <div class="gallery-item"><img src="GFX/Emailers/1.png" alt="Emailer 1"></div>
+                <!-- add more... -->
+            </div>
+        </div>
+    </section>
+
     <!-- Lightbox -->
     <div id="lightbox" class="lightbox">
         <span class="close" onclick="closeLightbox()">&times;</span>
@@ -97,7 +145,6 @@
         <a class="prev" onclick="changeImage(-1)">&#10094;</a>
         <a class="next" onclick="changeImage(1)">&#10095;</a>
     </div>
-    <script src="Javascripts/simulation-js.js"></script>
     <script>
         let currentIndex = 0;
         const images = document.querySelectorAll('.gallery-item img');
@@ -144,6 +191,38 @@ lightbox.addEventListener("touchend", e => {
     changeImage(-1);
   }
 });
+
+const subLinks = document.querySelectorAll(".sub-link");
+const contents = document.querySelectorAll(".tab-content");
+const dropdown = document.querySelector(".sub-nav-dropdown");
+
+// Handle click for desktop nav
+subLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    subLinks.forEach(l => l.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    link.classList.add("active");
+    document.getElementById(link.dataset.target).classList.add("active");
+
+    // sync dropdown
+    dropdown.value = link.dataset.target;
+  });
+});
+
+// Handle change for mobile dropdown
+dropdown.addEventListener("change", () => {
+  const target = dropdown.value;
+
+  subLinks.forEach(l => l.classList.remove("active"));
+  contents.forEach(c => c.classList.remove("active"));
+
+  document.querySelector(`.sub-link[data-target="${target}"]`).classList.add("active");
+  document.getElementById(target).classList.add("active");
+});
+
+
+
     </script>
 
 

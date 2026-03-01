@@ -52,7 +52,15 @@
                     <a href="graphics.html">Graphics Designs</a>
                   </div>
                 </div>
-                <a href="Mock Ups.html" class="button">Web Designs</a>
+                 <div class="dropdown">
+                  <a href="#" id="dropdownBtn2" class="button">UI/UX Designs ▾</a>
+                  <div id="dropdownMenu2" class="dropdown-content">
+                    <a href="Mock Ups.html">Web Designs</a>
+                    <!-- <a href="" onclick="filterSelection('mobile')">Mobile Designs</a> -->
+                    <a href="#projects" onclick="triggerFilter('mobile')">Mobile Designs</a>
+                  </div>
+                </div>
+                <!-- <a href="Mock Ups.html" class="button">Web Designs</a> -->
 								<a id="flip" class="button">Learn more</a>
 								<div id="panel" class="panel">
 								
@@ -385,7 +393,7 @@ Beyond my technical expertise, I am continuously exploring new technologies, des
 <div id="myBtnContainer">
   <button class="btn active2" onclick="filterSelection('all')"> Show all</button>
   <button class="btn" onclick="filterSelection('web')"> Web</button>
-  <button class="btn" onclick="filterSelection('mobile')"> Mobile</button>
+  <button class="btn" data-category="mobile" onclick="filterSelection('mobile')"> Mobile</button>
   <button class="btn" onclick="filterSelection('game')"> Game</button>
   <button class="btn" onclick="filterSelection('multimedia')"> Multimedia</button>
   <button class="btn" onclick="filterSelection('others')"> Others</button>
@@ -446,8 +454,7 @@ Beyond my technical expertise, I am continuously exploring new technologies, des
       <p class="text2">Website UI/UX design for The Barako Cafe.</p>
     </div>
   </div>
-  
-  
+
   <div class="column2 mobile">
     <div class="contentststs">
     <img src="Images/mobile-material-rom.png" style="width:100%">
@@ -455,12 +462,20 @@ Beyond my technical expertise, I am continuously exploring new technologies, des
       <p class="text2">A modified android 4.4 OS where it provides Android 5.0(Lollipop) UI/UX for devices that doesn’t have Lollipop OS update.</p>
     </div>
   </div>
-  
+
   <div class="column2 mobile">
     <div class="contentststs">
     <img src="Images/velour-&-co.png" style="width:100%">
       <a href="https://www.figma.com/proto/POPWhphXbBt3NoTGyJnylz/Velour---Co.?node-id=1007-6&t=2ckpzKH5noBqRwi2-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1007%3A6" target="_blank"><h4>Velour & Co.</h4></a>
       <p class="text2">Shopping App Design.</p>
+    </div>
+  </div>
+
+  <div class="column2 mobile">
+    <div class="contentststs">
+    <img src="Images/axiom-fitness.png" style="width:100%">
+      <a href="https://www.figma.com/proto/4DWCylx7I9TXPiYsCcdMtB/AXIOM-Fitness?node-id=147-240&t=c1TXmdh9wkt8iLYv-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank"><h4>Axiom Fitness</h4></a>
+      <p class="text2">Gym/Fitness App Design.</p>
     </div>
   </div>
   
@@ -471,6 +486,7 @@ Beyond my technical expertise, I am continuously exploring new technologies, des
       <p class="text2">Marketing graphics for Desster Supply for social media posts and commercials.</p>
     </div>
   </div>
+
   
   <div class="column2 multimedia">
     <div class="contentststs">

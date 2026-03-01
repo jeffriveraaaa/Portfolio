@@ -290,3 +290,35 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const dropdownBtn2 = document.getElementById("dropdownBtn2");
+    const dropdownMenu2 = document.getElementById("dropdownMenu2");
+
+    if(dropdownBtn2 && dropdownMenu2){
+        dropdownBtn2.addEventListener("click", (e) => {
+            e.preventDefault();
+            dropdownMenu2.classList.toggle("show");
+        });
+
+        document.addEventListener("click", (e) => {
+            if(!dropdownBtn2.contains(e.target) && !dropdownMenu2.contains(e.target)){
+                dropdownMenu2.classList.remove("show");
+            }
+        });
+    }
+});
+
+function triggerFilter(category) {
+  filterSelection(category);
+
+  var buttons = document.querySelectorAll("#myBtnContainer .btn");
+
+  buttons.forEach(function(btn) {
+    btn.classList.remove("active2");
+
+    if (btn.getAttribute("data-category") === category) {
+      btn.classList.add("active2");
+    }
+  });
+}

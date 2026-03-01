@@ -298,12 +298,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if(dropdownBtn2 && dropdownMenu2){
         dropdownBtn2.addEventListener("click", (e) => {
             e.preventDefault();
-            dropdownMenu2.classList.toggle("show");
+            dropdownMenu2.classList.toggle("show2");
         });
 
         document.addEventListener("click", (e) => {
             if(!dropdownBtn2.contains(e.target) && !dropdownMenu2.contains(e.target)){
-                dropdownMenu2.classList.remove("show");
+                dropdownMenu2.classList.remove("show2");
             }
         });
     }

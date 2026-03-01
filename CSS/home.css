@@ -841,3 +841,9 @@ div.container2 {
 .dropdown-content.show {
   display: block;
 }
+
+/* Show dropdown when active */
+.dropdown-content.show2 {
+  display: block;
+}
+
